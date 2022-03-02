@@ -7,18 +7,18 @@ public abstract class BasePanel : MonoBehaviour
 {
     public PageList PageList;
     public Button NextButton;
-    public Button PreviewButton;
+    public Button PreviouswButton;
     protected abstract GameObject FindPage();
 
     private void Awake() => InitEvent();
 
     private void InitEvent()
     {
-        NextButton.onClick.AddListener(GoToNextPage);
-        PreviewButton.onClick.AddListener(GoBackPage);
+        NextButton.onClick.AddListener(GoNextPage);
+        PreviouswButton.onClick.AddListener(GoBackPage);
     }
 
-    private void GoToNextPage()
+    private void GoNextPage()
     {
         GameObject nextPage = FindPage();
         if (nextPage != null)
@@ -29,4 +29,5 @@ public abstract class BasePanel : MonoBehaviour
     {
         Paging.Instance.GoPreviewPage(this.gameObject);
     }
+
 }

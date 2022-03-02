@@ -13,20 +13,6 @@ public class Paging
         panels.Push(currentPage);
         SetPageDeactive(currentPage);
         nextPage.SetActive(true);
-        // if (panels.Count > 0)
-        // {
-        //     if (nextPage == panels.Peek())
-        //         return;
-        //     panels.Push(currentPage);
-        //     SetPageDeactive(currentPage);
-        //     nextPage.SetActive(true);
-        // }
-        // else
-        // {
-        //     panels.Push(currentPage);
-        //     SetPageDeactive(currentPage);
-        //     nextPage.SetActive(true);
-        // }
     }
 
     public void GoPreviewPage(GameObject currentPage)
