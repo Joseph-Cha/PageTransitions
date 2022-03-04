@@ -10,10 +10,13 @@ public class PageC : BasePage
 
     [SerializeField]
     private Button GoPageA_Button;
-
+    [SerializeField]
+    private Button Back_Button;
     protected override void Init()
     {
         GoPageA_Button.onClick.AddListener(() => GoPage(PageName.PageA));
+        Back_Button.onClick.AddListener(() => BackPage());
+
     }
 
 
