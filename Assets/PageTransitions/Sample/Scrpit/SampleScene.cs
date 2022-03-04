@@ -10,5 +10,4 @@ public class SampleScene : MonoBehaviour
     {
         Paging.Instance.Init(PageName.PageA);
     }
-
 }

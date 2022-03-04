@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace PageTransitions
 {
-    [CreateAssetMenu(fileName = "Page", menuName = "ScriptableObjects/SpawnPageList", order = 1)]
+    [CreateAssetMenu(fileName = "Page", menuName = "ScriptableObjects/SpawnPagesAsset", order = 1)]
     public class PagesAsset : ScriptableObject
     {
         public Transform ParentCanvas;
