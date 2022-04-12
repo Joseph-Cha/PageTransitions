@@ -15,7 +15,7 @@ namespace PageTransitions
         public virtual void Show() => gameObject.SetActive(true);
         public virtual void Hide() => gameObject.SetActive(false);
 
-        public void GoPage(PageName pageName)
+        public void GoPage(PageName pageName, bool isClear = false)
         {
             Paging.Instance.GoPage(this, pageName);
         }

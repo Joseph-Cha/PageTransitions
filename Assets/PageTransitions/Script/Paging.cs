@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 using PageTransitions.Utils;
 using System.Collections.Generic;
 
@@ -40,17 +39,21 @@ namespace PageTransitions
             }
         }
 
-        public void GoPage(BasePage currentPage, PageName nextPageName)
+        public void GoPage(BasePage currentPage, PageName nextPageName, bool isClear = false)
         {
             BasePage nextPage = FindPage(nextPageName);
-            currentPageName = nextPageName;
 
             if (nextPage == null)
-            {
                 throw new System.NullReferenceException();
+            currentPageName = nextPageName;
+            if (isClear == true)
+            {
+                pageStack.Clear();
             }
-
-            pageStack.Push(currentPage);
+            else
+            {
+                pageStack.Push(currentPage);
+            }
             nextPage?.Show();
             currentPage.Hide();
         }
