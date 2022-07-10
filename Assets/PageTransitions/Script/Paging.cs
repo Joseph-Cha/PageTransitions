@@ -90,6 +90,15 @@ namespace PageTransitions
             return null;
         }
 
+        public T FindPage<T>(PageName pageName) where T : BasePage
+        {
+            if (pages.TryGetValue(pageName, out BasePage page))
+            {
+                return (T)page;
+            }
+            return null;
+        }
+
         public void ShowPage(PageName pageName)
         {
             if (pages.TryGetValue(pageName, out BasePage page))
