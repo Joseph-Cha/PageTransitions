@@ -1,0 +1,13 @@
+{
+	"name" : "com.josephc.pagetransitions",
+	"version" : "0.0.1-alpha1",
+	"displayName" : "Page Transitions",
+	"description" : "Module for screen transitions in Unity's uGUI. https://github.com/Joseph-Cha/PageTransitions",
+	"unity" : "2020.3",
+	"keywords" : [ "Unity", "uGUI", "Page" ],
+	"author" : {
+		"name" : "joseph.c",
+		"email" : "jospeh.c@kakao.com",
+		"url" : "https://github.com/Joseph-Cha"
+	}
+}
