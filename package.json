@@ -9,5 +9,12 @@
 		"name" : "joseph.c",
 		"email" : "jospeh.c@kakao.com",
 		"url" : "https://github.com/Joseph-Cha"
-	}
+	},
+	"samples": [
+		{
+			"displayName": "Demo",
+			"description": "Page Transitions Demo",
+			"path": "Samples~/Sample"
+		}
+	]
 }
